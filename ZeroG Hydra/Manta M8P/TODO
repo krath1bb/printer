@@ -1,0 +1,9 @@
+Voron example m8p config
+https://github.com/VoronDesign/Voron-2/blob/Voron2.4/firmware/klipper_configurations/M8P/Voron2_M8P_config.cfg
+
+
+
+Calculate extruder PID
+Calculate bed_heater PID
+
+Validate stepper run current (2amp should be 1.4a)
