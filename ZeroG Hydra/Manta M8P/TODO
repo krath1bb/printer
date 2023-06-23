@@ -11,8 +11,6 @@ Validate stepper run current (2amp should be 1.4a)
 
 https://github.com/Esoterical/voron_canbus/blob/main/toolhead_flashing/common_hardware/BigTreeTech%20SB2209%20and%20SB2240/SB2240%20Stepper%20Configuration%20and%20Undervoltage.md
 
-set canbus_uuid in printer.cfg
-
 revisit macros
 
 sensorless homing
