@@ -7,3 +7,25 @@ Calculate extruder PID
 Calculate bed_heater PID
 
 Validate stepper run current (2amp should be 1.4a)
+
+
+https://github.com/Esoterical/voron_canbus/blob/main/toolhead_flashing/common_hardware/BigTreeTech%20SB2209%20and%20SB2240/SB2240%20Stepper%20Configuration%20and%20Undervoltage.md
+
+set canbus_uuid in printer.cfg
+
+revisit macros
+
+sensorless homing
+You start with 255 and then drop it by 10 until it homes. It didn't home for me until at least 70. But then you keep lowering the value until it homes with a double tap and you enter the highest and lowest values into a formula. https://www.klipper3d.org/TMC_Drivers.html#sensorless-homing
+
+extruder run ccurrent
+
+
+
+Test z probe
+probe_accuracy samples=10
+
+Find center of bed coords update p_homing
+find z positions for steppers update p_homing
+
+bed_mesh min/max coordinates update p_homing
