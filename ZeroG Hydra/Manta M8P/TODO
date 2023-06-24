@@ -27,3 +27,12 @@ Find center of bed coords update p_homing
 find z positions for steppers update p_homing
 
 bed_mesh min/max coordinates update p_homing
+
+
+
+sensorless homing macros
+https://github.com/Kapman1/Sensorless-Homing
+https://www.youtube.com/watch?v=l-jVkmGk6Mw
+
+
+adxl345 onboard sb2240
