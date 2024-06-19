@@ -1,0 +1,13 @@
+{
+    "before_layer_change_gcode": ";BEFORE_LAYER_CHANGE\n;[layer_z]\nG92 E0",
+    "from": "User",
+    "inherits": "Voron 2.4 350 0.4 nozzle",
+    "is_custom_defined": "0",
+    "machine_end_gcode": "M104 S0 ; turn off temperature\nM140 S0 ; turn off heatbed\nM107 ; turn off fan\nG1 X20 Y150 E-10 F9001 ; home X axis, present print\nM84 ; disable motors\nSET_LED LED=sb_leds GREEN=0 RED=0 BLUE=0 WHITE=1",
+    "machine_start_gcode": "STATUS_HOMING\nG28 X Y; home all axes\nSTATUS_HEATING\nM140 S[first_layer_bed_temperature] ; set bed temp\nM104 S160 ; set extruder temp\nM190 S[first_layer_bed_temperature] ; wait for bed temp\nM109 S160 ; wait for extruder temp\nSTATUS_LEVELING\nG32 ; quad gantry level\nSTATUS_MESHING\nBED_MESH_CALIBRATE ; bed mesh leveling\nSTATUS_HEATING\nSmart_Park\nM104 S[first_layer_temperature] ; set extruder temp\nM109 S[first_layer_temperature] ; wait for extruder temp\nSTATUS_READY\nSET_LED LED=sb_leds GREEN=0 RED=0 BLUE=0 WHITE=0.950\nLine_Purge",
+    "name": "Voron 2.4,  350mm, 0.4 nozzle - BKrathwohl",
+    "print_host": "10.2.8.7",
+    "printable_height": "280",
+    "printer_settings_id": "Voron 2.4,  350mm, 0.4 nozzle - BKrathwohl",
+    "version": "1.6.5.2"
+}

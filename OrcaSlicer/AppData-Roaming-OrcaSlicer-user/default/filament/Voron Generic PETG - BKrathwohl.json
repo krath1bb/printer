@@ -1,0 +1,25 @@
+{
+    "filament_max_volumetric_speed": [
+        "9"
+    ],
+    "filament_settings_id": [
+        "Voron Generic PETG - BKrathwohl"
+    ],
+    "filament_vendor": [
+        "Polymaker"
+    ],
+    "from": "User",
+    "inherits": "Voron Generic PETG",
+    "is_custom_defined": "0",
+    "name": "Voron Generic PETG - BKrathwohl",
+    "nozzle_temperature": [
+        "260"
+    ],
+    "nozzle_temperature_initial_layer": [
+        "265"
+    ],
+    "nozzle_temperature_range_high": [
+        "265"
+    ],
+    "version": "1.8.0.0"
+}
